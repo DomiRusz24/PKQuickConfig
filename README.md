@@ -1,0 +1,40 @@
+## How to shade:
+```xml
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>3.3.0</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+              <configuration>
+                  <createDependencyReducedPom>false</createDependencyReducedPom>
+                  <relocations>
+                      <relocation>
+                          <pattern>me.domirusz24.pkquickconfig</pattern>
+                          <shadedPattern>YOUR.PATH.HERE.pkquickconfig</shadedPattern>
+                      </relocation>
+                  </relocations>
+              </configuration>
+          </execution>
+        </executions>
+      </plugin>
+```
+## Repo and dependency:
+```xml
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+```
+
+```xml
+    <dependency>
+        <groupId>com.github.DomiRusz24</groupId>
+        <artifactId>PKQuickConfig</artifactId>
+        <version>v1.0.0</version>
+    </dependency>
+```
