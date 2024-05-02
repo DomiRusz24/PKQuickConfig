@@ -35,6 +35,6 @@
     <dependency>
         <groupId>com.github.DomiRusz24</groupId>
         <artifactId>PKQuickConfig</artifactId>
-        <version>v1.0.0</version>
+        <version>v1.0.1</version>
     </dependency>
 ```
